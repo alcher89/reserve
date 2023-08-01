@@ -1,0 +1,310 @@
+@media ( max-width: 1200px )
+	.menu
+		&_item
+			padding-right: 27px
+		&_link
+			font-size: 12px
+	.promo
+		&_heder
+			font-size: 51px
+		&_subheder
+			font-size: 34px
+	.jobinfo
+		&_descr
+			width: 322px
+			margin: 0 12px 54px 9x
+			span
+				font-size: 16px
+		&_h2
+			font-size: 36px
+
+
+	.footer
+		&_wrapper > div 
+			width: 50%
+			&:nth-child(1)
+				width: 25%
+			&:nth-child(3)
+				width: 25%
+				display: flex 
+				justify-content: flex-end
+		&_mobile
+			display: flex
+			a 
+				margin: 0 3px
+				img 
+					width: 100%
+
+
+@media ( max-width: 992px )
+	nav
+		position: fixed
+		width: 100%
+	.menu
+		&_item
+
+			padding-right: 14px
+		&_link
+			font-size: 10px
+	.subherder
+		&_logo
+			img
+				width:90%
+		&_text
+			font-size: 12px
+		&_phone
+			font-size: 18px
+		&_call
+			font-size: 11px
+		&_btn
+			width: 130px    
+			font-size: 15px
+	.mobile
+		&_item
+			width: 212px
+			&_subtitle
+				font-size: 18px        
+	.promo
+		&_heder
+			font-size: 37px
+		&_subheder
+			font-size: 26px
+		&_descr
+			font-size: 18px
+		&_btn
+			width: 150px
+			font-size: 13px                    
+	.jobinfo
+		&_col
+			flex-direction: column
+			align-items: center
+		&_round
+			margin-right: 0	
+		&_descr
+			margin-top: 20px
+			width: 270px
+			span
+				font-size: 15px        
+	.footer
+		&_wrapper
+			flex-wrap: wrap
+		&_wrapper > div 
+			width: 100%
+			display: flex 
+			justify-content: center
+			margin-bottom: 20px
+			&:nth-child(1)
+				width: 100%
+			&:nth-child(3)
+				width: 100%
+				justify-content: center     
+
+@media ( max-width: 767px )
+	.menu
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 50%
+		height: 100vh
+		padding: 20px 15px
+		background-color: rgba(0,0,0, .8)
+		transition: 0.6s all
+		&_active 
+			left: 0
+		&_item 
+			padding-right: 0
+			border: none
+			margin: 10px 0
+		&_link 
+			font-size: 20px
+
+
+	.hamburger
+		display: block
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 26px
+		height: 12px
+		span 
+			display: block 
+			height: 2px
+			width: 100%
+			background-color: #fff 
+			margin-bottom: 2px
+			transition: 0.5s all
+		&_active 
+			span 
+				margin-bottom: -2px 
+				&:nth-child(1)
+					transform: translateY(3px) rotate(-45deg)
+				&:nth-child(2)
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px) rotate(45deg)
+	.xs-hidden
+		display: none
+	.xs-visible 
+		display: block
+
+	.subherder
+		&_phone
+			display: block 
+			margin-top: 10px
+			color: #ffffff
+			font-size: 16px
+			font-weight: 300
+			text-transform: uppercase
+			text-align: center
+		&_btn 
+			display: block
+			width: 160px
+			height: 40px
+			margin: 0 auto
+			margin-top: 10px
+		
+	.promo
+		&_header 
+			line-height: 45px
+
+@media ( max-width: 575px )
+	nav 
+		height: 30px
+	header 
+		height: 30px
+	.title 
+		font-size: 16px
+		margin-top: 15px
+		line-height: 16px
+	.subtitle 
+		font-size: 14px
+		line-height: 21px
+		margin-top: 11px
+	.subherder
+		margin-top: 0
+		height: 60px
+		top: 30px
+		&_text
+			display: none
+		&_logo 
+			margin-top: 16px
+		&_phone
+			font-size: 15px
+			font-weight: 300
+			text-transform: uppercase
+			margin-top: 12px
+		&_btn 
+			width: 120px
+			height: 27px
+			font-size: 15px
+			margin-top: 12px
+			&:hover
+				background-image: linear-gradient(to top, $blue_color 0%, #4ce2ff 100%)
+		&_logo
+			img
+				display: block 
+				margin-top: 35px
+				width: 120px		
+	.promo 
+		min-height: 400px
+		padding: 93px 0 35px 0
+		&_descr
+			display: none
+		&_header
+			font-size: 30px
+			padding: 0 24px
+			line-height: 35px
+		&_subheader
+			font-size: 20px
+			margin-top: 33px
+			padding: 0 10px
+			line-height: 30px
+		&_btn 
+			width: 210px
+			height: 50px
+			margin-top: 72px
+			font-size: 16px
+			&:hover
+				background-image: linear-gradient(to top, $blue_color 0%, #4ce2ff 100%)
+	.menu 
+		width: 85%
+		&_item 
+			width: 100%
+			text-align: center
+			padding: 5px 0
+		&_link
+			display: block
+	.hamburger
+		&_active 
+			span 
+				&:nth-child(1)
+					transform: translateY(5px) rotate(-45deg)
+				&:nth-child(3)
+					transform: translateY(5px) rotate(45deg)
+	.foot_line
+		width: 290px
+
+	.jobinfo
+		margin: 22px 0 40px 0
+		&_descr
+			margin: 27px 5px
+			font-size: 15px
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			letter-spacing: normal
+			text-align: justify
+			color: #202020
+		&_h2
+			font-size: 16px
+			font-weight: 500
+	.car
+		&_btn
+			display: block
+			margin: 0 auto
+			margin-bottom: 45px
+		&_sbtitle
+			display: none
+		&_sbtitle_2		
+			display: none
+		&_sbtitle_3
+			font-size: 18px
+			font-weight: 300
+			font-stretch: normal
+			font-style: normal
+			line-height: 1.41
+			letter-spacing: normal
+			text-align: center
+			color: #fff	
+	.footer
+		&_divider
+			width: 203px
+			margin: 0 auto
+		&_wrapper
+			padding-top: 22px
+		&_wrapper > div 
+			margin-bottom: 20px
+			&:nth-child(1)
+				order: 2
+			&:nth-child(2)
+				order: 1
+			&:nth-child(3)
+				order: 3
+		&_links 
+			width: 290px 
+			&_main 
+				padding: 0
+				font-size: 14px
+			&_sub 
+				flex-wrap: wrap
+				justify-content: center
+				a
+					padding: 9px
+				img 
+					margin: 0 7px
+			&_lang 
+				margin-top: 10px
